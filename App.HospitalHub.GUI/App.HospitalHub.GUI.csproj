@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CEA51B2-C975-480D-B863-07815AC6B325}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>App.HospitalHub.GUI</RootNamespace>
+    <AssemblyName>App.HospitalHub.GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Uc Coordinator\FormFoodCoordinatorView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\FormFoodCoordinatorView.designer.cs">
+      <DependentUpon>FormFoodCoordinatorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\FormFoodCoordinatorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\FormFoodCoordinatorUpdate.designer.cs">
+      <DependentUpon>FormFoodCoordinatorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\ConfirmAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\ConfirmAppointment.Designer.cs">
+      <DependentUpon>ConfirmAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC ADMIN\DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC ADMIN\DashboardAdmin.Designer.cs">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\DashboardCoordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\DashboardCoordinator.Designer.cs">
+      <DependentUpon>DashboardCoordinator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\DashboardPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\DashboardPatient.Designer.cs">
+      <DependentUpon>DashboardPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelegateClassForPatient.cs" />
+    <Compile Include="Uc Coordinator\FormCoHospitalUpate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\FormCoHospitalUpate.Designer.cs">
+      <DependentUpon>FormCoHospitalUpate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\FormEditProfilePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\FormEditProfilePatient.Designer.cs">
+      <DependentUpon>FormEditProfilePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\FormOrdinatorProfileEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\FormOrdinatorProfileEdit.Designer.cs">
+      <DependentUpon>FormOrdinatorProfileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\HospitalInfoViewPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\HospitalInfoViewPatient.Designer.cs">
+      <DependentUpon>HospitalInfoViewPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcAppoinmentOrdinator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcAppoinmentOrdinator.Designer.cs">
+      <DependentUpon>UcAppoinmentOrdinator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\UcAppointmentPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\UcAppointmentPatient.Designer.cs">
+      <DependentUpon>UcAppointmentPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\UcDiagnosisViewPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\UcDiagnosisViewPatient.Designer.cs">
+      <DependentUpon>UcDiagnosisViewPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\UcHospitalDeptView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\UcHospitalDeptView.Designer.cs">
+      <DependentUpon>UcHospitalDeptView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\UcHospitalListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\UcHospitalListView.Designer.cs">
+      <DependentUpon>UcHospitalListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcOrdinatorProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcOrdinatorProfile.Designer.cs">
+      <DependentUpon>UcOrdinatorProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\UcOtherServicesPatients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\UcOtherServicesPatients.Designer.cs">
+      <DependentUpon>UcOtherServicesPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\UcPatientProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\UcPatientProfile.Designer.cs">
+      <DependentUpon>UcPatientProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcViewHospitalBasicInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcViewHospitalBasicInfo.Designer.cs">
+      <DependentUpon>UcViewHospitalBasicInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcServicesAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcServicesAdd.Designer.cs">
+      <DependentUpon>UcServicesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcDepartmentUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcDepartmentUpdate.Designer.cs">
+      <DependentUpon>UcDepartmentUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcDiagnosisAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcDiagnosisAdd.Designer.cs">
+      <DependentUpon>UcDiagnosisAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcDoctorUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcDoctorUpdate.Designer.cs">
+      <DependentUpon>UcDoctorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcHospitalInfoInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcHospitalInfoInput.Designer.cs">
+      <DependentUpon>UcHospitalInfoInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC ADMIN\UcHospitalList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC ADMIN\UcHospitalList.Designer.cs">
+      <DependentUpon>UcHospitalList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC ADMIN\UcPatientLists.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC ADMIN\UcPatientLists.Designer.cs">
+      <DependentUpon>UcPatientLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\UcRegistrationPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\UcRegistrationPatient.Designer.cs">
+      <DependentUpon>UcRegistrationPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcOrdinatorReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Coordinator\UcOrdinatorReg.Designer.cs">
+      <DependentUpon>UcOrdinatorReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc Patient\UcRatingPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc Patient\UcRatingPatient.Designer.cs">
+      <DependentUpon>UcRatingPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcFoodPatientView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcFoodPatientView.Designer.cs">
+      <DependentUpon>UcFoodPatientView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Uc Coordinator\FormFoodCoordinatorView.resx">
+      <DependentUpon>FormFoodCoordinatorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\FormFoodCoordinatorUpdate.resx">
+      <DependentUpon>FormFoodCoordinatorUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\ConfirmAppointment.resx">
+      <DependentUpon>ConfirmAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC ADMIN\DashboardAdmin.resx">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\DashboardCoordinator.resx">
+      <DependentUpon>DashboardCoordinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\DashboardPatient.resx">
+      <DependentUpon>DashboardPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\FormCoHospitalUpate.resx">
+      <DependentUpon>FormCoHospitalUpate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\FormEditProfilePatient.resx">
+      <DependentUpon>FormEditProfilePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\FormOrdinatorProfileEdit.resx">
+      <DependentUpon>FormOrdinatorProfileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\HospitalInfoViewPatient.resx">
+      <DependentUpon>HospitalInfoViewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\UcAppoinmentOrdinator.resx">
+      <DependentUpon>UcAppoinmentOrdinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\UcAppointmentPatient.resx">
+      <DependentUpon>UcAppointmentPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\UcDiagnosisViewPatient.resx">
+      <DependentUpon>UcDiagnosisViewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\UcHospitalDeptView.resx">
+      <DependentUpon>UcHospitalDeptView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\UcHospitalListView.resx">
+      <DependentUpon>UcHospitalListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\UcOrdinatorProfile.resx">
+      <DependentUpon>UcOrdinatorProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\UcOtherServicesPatients.resx">
+      <DependentUpon>UcOtherServicesPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\UcPatientProfile.resx">
+      <DependentUpon>UcPatientProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\UcViewHospitalBasicInfo.resx">
+      <DependentUpon>UcViewHospitalBasicInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\UcServicesAdd.resx">
+      <DependentUpon>UcServicesAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\UcDepartmentUpdate.resx">
+      <DependentUpon>UcDepartmentUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\UcDiagnosisAdd.resx">
+      <DependentUpon>UcDiagnosisAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\UcDoctorUpdate.resx">
+      <DependentUpon>UcDoctorUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\UcHospitalInfoInput.resx">
+      <DependentUpon>UcHospitalInfoInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC ADMIN\UcHospitalList.resx">
+      <DependentUpon>UcHospitalList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC ADMIN\UcPatientLists.resx">
+      <DependentUpon>UcPatientLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Coordinator\UcOrdinatorReg.resx">
+      <DependentUpon>UcOrdinatorReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\UcRegistrationPatient.resx">
+      <DependentUpon>UcRegistrationPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc Patient\UcRatingPatient.resx">
+      <DependentUpon>UcRatingPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcFoodPatientView.resx">
+      <DependentUpon>UcFoodPatientView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\backg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93489623_644697206106348_1947826569917497344_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.HospitalHub.Data\App.HospitalHub.Data.csproj">
+      <Project>{3961b91f-9ba1-4102-8fd5-1b498c70b155}</Project>
+      <Name>App.HospitalHub.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.HospitalHub.Entity\App.HospitalHub.Entity.csproj">
+      <Project>{3a703646-ad4b-4e4d-baa6-012e6c43ca07}</Project>
+      <Name>App.HospitalHub.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.HospitalHub.Framework\App.HospitalHub.Framework.csproj">
+      <Project>{3572d2e4-09aa-4012-8605-ba79957fb68d}</Project>
+      <Name>App.HospitalHub.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.HospitalHub.Repo\App.HospitalHub.Repo.csproj">
+      <Project>{cb33daf7-0c1e-47a7-a224-e9c3704f96bc}</Project>
+      <Name>App.HospitalHub.Repo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\icons8_wheelchair_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\icons8_update_left_rotation_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\icons8_department_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\icons8_medical_doctor_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\icons8_food_service_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\appointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\icons8_health_checkup_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\icons8_back_arrow_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\icons8_admin_settings_male_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\ratingnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\ratingnewaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\icons8_food_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\icons8_thumbs_up_24px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
